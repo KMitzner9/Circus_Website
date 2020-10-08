@@ -12,13 +12,20 @@
   display: table;
   clear: both;
 }
+
+.row {
+  background-color: maroon;
+  height: 400px;
+  margin: 0;
+  max-width: 100%;
+}
   
 /* Create four equal columns that floats next to eachother */
 .column {
   float: left;
-  width: 25%;
-  height: 400px;
-  margin: 20px auto;
+  width: 20%;
+  height: 200px;
+  margin: 20px;
 }
 
 /* The Modal (background) */
@@ -33,7 +40,7 @@
   height: 100%;
   overflow: auto;
   background-image: url(../Images/image_background.jpg);
-  background-size: 100%;
+  background-size: cover;
 }
 
 /* Modal Content */
@@ -116,10 +123,11 @@
   padding: 2px 16px;
   color: white;
   margin: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img.demo {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .active,

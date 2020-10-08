@@ -6,7 +6,9 @@
         <title>FLARENHEIGHT ENTERTAINMENT</title>
         <link rel="stylesheet" href="./CSS/flarenheight.css">
         <link rel="stylesheet" href="./CSS/flarenheight_animations.css">
+        <link rel="stylesheet" href="./CSS/test_gallery_css.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kufam">
+        <script src="JS/test_gallery_js.js" defer></script>
     </head>
 
     <body>
@@ -33,7 +35,78 @@
         </div>
         <!-- END HOME -->
 
+        <!-- LIGHTBOX GALLERY -->
+        <div id="lightbox">
+            <div class="row">
+                <div class="column">
+                  <img src="./Images/Thumb/Aerial_Thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                  <img src="./Images/Thumb/Aerial_Thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                  <img src="./Images/Thumb/Aerial_Thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                  <img src="./Images/Thumb/Aerial_Thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+    
+              <!-- The Modal/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./Images/Thumb/Aerial_Thumbnail_1.jpg">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./Images/Thumb/Aerial_Thumbnail_2.jpg">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./Images/Thumb/Aerial_Thumbnail_3.jpg">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./Images/Thumb/Aerial_Thumbnail_4.jpg">
+                  </div>
+              
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Aerial_Thumbnail_1.png" onclick="currentSlide(1)" alt="Elements Training Company 2020">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Aerial_Thumbnail_2.png" onclick="currentSlide(2)" alt="Elements Training Company 2020">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Aerial_Thumbnail_3.png" onclick="currentSlide(3)" alt="NECCA Performance Bootcamp 2019">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./Images/Thumb/Aerial_Thumbnail_4.png" onclick="currentSlide(4)" alt="NECCA Performance Bootcamp 2019">
+                </div>
+            </div>
+        </div>
+        
         <!-- GALLERY -->
+        <!--
         <section id="gallery">
             <div class="container">
                 <h1>GALLERY</h1>
@@ -41,6 +114,7 @@
 
 
                         <!-- PHOTO CONTAINER 1 -->
+                        <!--
                         <div class="photo-container-1">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_1.jpg" alt="Aerial Silks">
@@ -53,6 +127,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 2 -->
+                        <!--
                         <div class="photo-container-2">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_2.jpg" alt="Aerial Silks">
@@ -65,6 +140,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 3 -->
+                        <!--
                         <div class="photo-container-3">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_3.jpg" alt="Aerial Silks">
@@ -77,6 +153,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 4 -->
+                        <!--
                         <div class="photo-container-4">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_5.jpg" alt="Aerial Rope">
@@ -89,6 +166,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 5 -->
+                        <!--
                         <div class="photo-container-5">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_4.jpg" alt="Aerial Silks">
@@ -101,6 +179,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 6 -->
+                        <!--
                         <div class="photo-container-6">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_6.jpg" alt="Aerial Rope">
@@ -113,6 +192,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 7 -->
+                        <!--
                         <div class="photo-container-7">
                             <div class="photo">
                                 <img src="./Images/Thumb/Aerial_Thumbnail_7.jpg" alt="Aerial Silks">
@@ -125,6 +205,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 8 -->
+                        <!--
                         <div class="photo-container-8">
                             <div class="photo">
                                 <img src="./Images/Thumb/Fire_Thumbnail_1.jpg" alt="Fire Fans">
@@ -137,6 +218,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 9 -->
+                        <!--
                         <div class="photo-container-9">
                             <div class="photo">
                                 <img src="./Images/Thumb/Fire_Thumbnail_2.jpg" alt="Fire Fans">
@@ -149,6 +231,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 10 -->
+                        <!--
                         <div class="photo-container-10">
                             <div class="photo">
                                 <img src="./Images/Thumb/Fire_Thumbnail_3.jpg" alt="Fire Fins">
@@ -161,6 +244,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 11 -->
+                        <!--
                         <div class="photo-container-11">
                             <div class="photo">
                                 <img src="./Images/Thumb/Fire_Thumbnail_4.jpg" alt="Fire Hoop Light Trails">
@@ -173,6 +257,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 12 -->
+                        <!--
                         <div class="photo-container-12">
                             <div class="photo">
                                 <img src="./Images/Thumb/More_Thumbnail_1.jpg" alt="Partner Acro">
@@ -185,6 +270,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 13 -->
+                        <!--
                         <div class="photo-container-13">
                             <div class="photo">
                                 <img src="./Images/Thumb/More_Thumbnail_2.jpg" alt="Pole Clown">
@@ -197,6 +283,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 14 -->
+                        <!--
                         <div class="photo-container-14">
                             <div class="photo">
                                 <img src="./Images/Thumb/More_Thumbnail_4.jpg" alt="Pole Dance">
@@ -209,6 +296,7 @@
                         <!-- END PHOTO CONTAINER -->
 
                         <!-- PHOTO CONTAINER 15 -->
+                        <!--
                         <div class="photo-container-15">
                             <div class="photo">
                                 <img src="./Images/Thumb/More_Thumbnail_3.jpg" alt="Hula Hoop">
@@ -220,10 +308,11 @@
                         </div>
                         <!-- END PHOTO CONTAINER -->
 
-
+                <!--
                 </div>
             </div>
         </section>
+    
         <!-- END GALLERY -->
         
         <!-- CONTACT/BOOKING -->
