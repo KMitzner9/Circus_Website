@@ -33,6 +33,7 @@
   height: 100%;
   overflow: auto;
   background-image: url(../Images/image_background.jpg);
+  background-size: 100%;
 }
 
 /* Modal Content */
