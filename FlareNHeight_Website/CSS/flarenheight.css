@@ -16,11 +16,12 @@ body {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+    background-color: black;
 }
 
 footer, nav {
     display:block;
+    z-index: 9;
 }
 
 h2, h3, h4, h5, h6 {
@@ -194,7 +195,7 @@ section {
 }
 
 #booking {
-    background-color: #f5f3f3;
+    background-color: black;
 }
 
 .contact {
@@ -203,6 +204,7 @@ section {
     border-radius: 8px;
     box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
     margin: 0px auto;
+    background-color: maroon;
 }
 
 .contact h2 {
