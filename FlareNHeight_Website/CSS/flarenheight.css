@@ -359,8 +359,8 @@ section {
 /* FOOTER STYLE */
 
 #footer {
-    background-color: rgba(100, 65, 0, .3);
-    color: #000;
+    background-color: rgba(90, 6, 6, 0.3);
+    color: white;
     text-shadow: 2px 2px 8px 0 rgba(0,0,0,0.4);
     padding: 20px 50px 20px 50px;
     text-align: right;
