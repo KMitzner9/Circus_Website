@@ -29,6 +29,10 @@ h2, h3, h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
 }
 
+a {
+    color:rgba(255, 255, 255, 0.452);
+}
+
 h1 {
     line-height: 50px;
     font-family: "Kufam";
@@ -136,6 +140,7 @@ section {
     position: fixed;
     z-index: 100; 
 }
+
 
 /* HOME SECTION STYLES */
 
